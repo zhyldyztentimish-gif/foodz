@@ -37,9 +37,45 @@ header {
 .header__right li:first-child {
   color: #04b90b;
 }
-.header__right li a{
+.header__right li a {
   color: #777e90;
   text-decoration: none;
+}
+.hero__right {
+  position: relative;
+}
+
+.hero__bipimbap {
+  position: relative;
+  z-index: 3;
+  background: none;
+  right: 100px;
+  top: 50px;
+}
+
+.hero__circle {
+  position: absolute;
+  z-index: 1;
+  bottom: -7%;
+  right: 10%;
+  background: none;
+}
+.hero__sugar,
+.hero__chopstick {
+  position: absolute;
+  background: none;
+  z-index: 10;
+}
+.hero__chopstick {
+  bottom: 10px;
+  right: 100px;
+}
+.hero__sugar {
+  top: 30px;
+  right: 70px;
+}
+.hero {
+  overflow: hidden;
 }
 
 .hero__content {
@@ -167,7 +203,7 @@ header {
   padding: 80px;
 }
 .swiper-slide {
-    padding-block: 30px;
+  padding-block: 30px;
 }
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -238,40 +274,38 @@ header {
   box-shadow: 0 10px 27px 0 rgba(53, 53, 53, 0.05) !important;
   background: #fff !important;
 }
-footer{
+footer {
   width: 1440px;
-  margin: 200px ;
- 
+  margin: 200px;
 }
 .footer {
   padding: 61px 78px 0 92px;
   display: flex;
   gap: 150px;
-  
 }
 .one__kolonka p {
-width: 336px;
-margin-top: 15px;
-font-family:  "Poppins", sans-serif;
-font-weight: 400;
-font-size: 14px;
-text-align: center;
-color:#777e90;
+  width: 336px;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #777e90;
 }
 .footer li {
-font-family: "Poppins", sans-serif;
-font-weight: 400;
-font-size: 16px;
-color: #777e90;
-margin-bottom: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777e90;
+  margin-bottom: 24px;
 }
 .one__kolonka img {
   margin-left: 95px;
 }
 .first {
-font-weight: 500 !important;
-font-size: 16px !important;
-color: #000 !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  color: #000 !important;
 }
 
 @media (max-width: 500px) {
@@ -345,3 +379,29 @@ color: #000 !important;
     height: 25px;
   }
 }
+@media (max-width:700px) {
+  .footer__img {
+    width: 70px;
+    height: 30px;
+  }
+ .footer {
+  gap: 20px;
+ }
+ .one__kolonka p {
+  width: 200px;
+}
+}
+@media (max-width:900px) {
+  .footer__img {
+    width: 100px;
+    height: 50px;
+  }
+ .footer {
+  gap: 30px;
+ }
+ .one__kolonka p {
+  width: 240px;
+}
+}
+
+
